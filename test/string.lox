@@ -1,0 +1,11 @@
+string word = "hey";
+int a = 9;
+float b = 9.4;
+float x = "hi";
+float x1 = 9;
+
+print word;
+print a;
+print b;
+print x;
+print x1;

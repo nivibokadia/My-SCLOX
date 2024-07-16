@@ -1,0 +1,26 @@
+TOKEN_INT a = 10;         // integer
+TOKEN_FLOAT b = 3.14;     // float
+TOKEN_STRING c = "Hello"; // string
+
+fun testTypes() {
+   
+    if (isInt(a)) {
+        print "a is an integer";
+    } else {
+        print "a is not an integer";
+    }
+
+    if (isFloat(b)) {
+        print "b is a float";
+    } else {
+        print "b is not a float";
+    }
+
+    if (isString(c)) {
+        print "c is a string";
+    } else {
+        print "c is not a string";
+    }
+}
+
+testTypes();

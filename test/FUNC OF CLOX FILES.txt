@@ -1,0 +1,107 @@
+FUNC OF CLOX FILES
+
+CHUNK.C - initChunk(Chunk* chunk)
+	  freeChunk(Chunk* chunk)
+	  writeChunk( CHunk* chunk)
+	  addConstant(Chunk* chunk, Value value)
+
+CHUNK.H - Enum OpCode
+	  Struct Chunk
+	  
+
+COMPILER.C - Struct Parser
+	     Enum Precedence
+	     Struct ParseRule
+	     Struct Local
+	     Struct VM global
+	     Struct Upvalue
+	     Enum FunctionType
+	     Struct Compiler
+	     Struct ClassCompiler
+	     currentChunk()
+	     errorAt(Token* token, const char* message)
+	     error(const char* message)
+	     errorAtCurrent(const char* message)
+	     advance()
+	     consume(TokenType type, const char* message)
+	     check(TokenType type)
+	     match(TokenType type)
+	     emitByte(uint8_t byte)
+	     emitBytes(uint8_t byte1, uint8_t byte2)
+	     emitLoop(int loopStart)
+	     emitJump(uint8_t instruction)
+	     emitReturn()
+	     makeConstant(Value value)
+	     makeConstantInt()
+	     makeConstantFloat()
+	     makeConstantString()
+	     emitConstant(Value value)
+	     patchJump(int offset)
+	     initCompiler(Compiler* compiler, FunctionType type)
+	     endCompiler()
+	     beginScope()
+	     endScope()
+	     identifiersEqual(Token* a, Token* b)
+	     resolveLocal(Compiler* compiler, Token* name)
+	     addUpvalue(Compiler* compiler, uint8_t index, bool isLocal)
+	     resolveUpvalue(Compiler* compiler, Token* name)
+	     addLocal(Token name)
+	     declareVariable()
+	     typeToString(ValueType type)
+	     parseVariable(const char* errorMessage)
+	     markInitialized()
+	     defineVariable(uint8_t global)
+	     argumentList()
+	     and_(bool canAssign)
+	     emitBinaryOp(TokenType operatorType, OpCode intOpcode, OpCode floatOpcode)
+	     binary(bool canAssign)
+	     call(bool canAssign)
+	     dot(bool canAssign)
+	     literal(bool canAssign)
+	     grouping(bool canAssign)
+	     integer_(bool canAssign)
+	     floating_(bool canAssign)
+	     getVariableType(Token* name)
+	     or_(bool canAssign)	     
+	     string(bool canAssign)
+	     getExpressionType()
+	     namedVariable(Token name, bool canAssign)
+	     findGlobal(Token* name)
+	     variable(bool canAssign)
+	     syntheticToken(const char* text)
+	     super_(bool canAssign)
+	     this_(bool canAssign) 
+	     unary(bool canAssign)
+	     ParseRule rules[]
+	     parsePrecedence(Precedence precedence)
+	     ParseRule* getRule(TokenType type)
+	     expression()
+	     block()
+	     function(FunctionType type)
+	     method()
+	     classDeclaration()
+	     funDeclaration() 
+             varDeclaration() 
+	     unary(bool canAssign)
+	     unary(bool canAssign)
+	     expressionStatement()
+	     forStatement()
+	     ifStatement()
+	     printStatement()
+	     returnStatement()
+	     whileStatement()
+	     synchronize()
+	     declaration()
+ 	     statement()
+	     compile(const char* source)
+	     markCompilerRoots()
+
+
+
+
+
+
+
+
+
+	     

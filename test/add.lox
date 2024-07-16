@@ -1,0 +1,6 @@
+class A {
+        int a = 9;
+	fun foo () {
+   		print a;
+	}
+}

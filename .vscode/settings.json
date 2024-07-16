@@ -1,0 +1,22 @@
+{
+    "C_Cpp.dimInactiveRegions": false,
+    "files.associations": {
+        "type_traits": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "exception": "c",
+        "fstream": "c",
+        "istream": "c",
+        "ostream": "c",
+        "sstream": "c",
+        "stdexcept": "c",
+        "system_error": "c",
+        "typeinfo": "c",
+        "value.h": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "utility": "c",
+        "random": "c"
+    }
+}

@@ -1,0 +1,12 @@
+class A{
+  method(arg){print "A.method(" + arg + ")"; }
+ }
+ 
+ class B < A{
+  method(arg) { print "B.method (" + arg + ")"; }
+    hi(){ return super.method; }
+ }
+ string c = A().method("nivi");
+ //print B().hi();
+ //var c = B().method("nivi");
+

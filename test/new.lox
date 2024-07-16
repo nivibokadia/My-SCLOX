@@ -1,0 +1,9 @@
+var a = "outer";
+
+{
+fun foo() {
+ print a;
+}
+foo();
+foo();
+}

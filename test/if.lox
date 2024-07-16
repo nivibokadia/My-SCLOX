@@ -1,0 +1,2 @@
+if (true) print "good"; else print "bad";
+if (false) print "good"; else print "bad";
